@@ -7,7 +7,7 @@ defmodule Cyanometer.Repo.Migrations.CreateLocation do
       add :city, :string
       add :place, :string
 
-      timestamps
+      timestamps()
     end
 
   end
