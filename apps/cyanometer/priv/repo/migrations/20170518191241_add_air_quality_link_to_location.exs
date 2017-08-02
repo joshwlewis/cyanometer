@@ -5,6 +5,7 @@ defmodule Cyanometer.Repo.Migrations.AddAirQualityLinkToLocation do
   alias Cyanometer.Location
 
   def change do
+    IO.puts("Running AddAirQualityLinkToLocation")
     alter table(:locations) do
       add :air_quality_link, :string
     end
@@ -23,5 +24,6 @@ defmodule Cyanometer.Repo.Migrations.AddAirQualityLinkToLocation do
     alter table(:locations) do
       modify :air_quality_link, :string, null: false
     end
+    IO.puts("Ran AddAirQualityLinkToLocation")
   end
 end
