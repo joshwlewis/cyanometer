@@ -26,6 +26,6 @@ defmodule CyanometerUmbrella.Mixfile do
   end
 
   defp aliases do
-    ["test-ci": ["ecto.migrate", "test"]]
+    ["test": ["ecto.migrate", "test"]]
   end
 end
